@@ -213,6 +213,24 @@
             }
 
         </script>
+        <script src="https://utteranc.es/client.js"
+            repo="vo6i/vo6i.github.io"
+            issue-term="https://github.com/vo6i/vo6i.github.io/issues/1"
+            theme="photon-dark"
+            crossorigin="anonymous"
+            async>
+
+            const svg = document.getElementById('triangles');
+
+            svg.onclick = (e) => {
+              const colors = ['red', 'blue', 'green', 'orange', 'pink', 'purple']
+              const rando = () => colors[Math.floor(Math.random() * colors.length)>
+              document.documentElement.style.cssText = `
+              --dark-color: ${rando()};
+              --light-color: ${rando()};
+              `
+            }
+            </script>
 
     </body>
 
